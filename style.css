@@ -1,0 +1,27 @@
+body{
+    margin: 0px;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 0 20px;
+    justify-content: right;
+}
+li{
+    display: inline-flex;
+    margin: 0 20px;
+}
+
+.ddivv{
+    display: flex;
+}
+
+.gen{
+    display: inline-block;
+}
+.multi{
+    display: inline-block;
+    margin: 0 20px;
+}
