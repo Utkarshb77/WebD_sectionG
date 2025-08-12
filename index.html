@@ -50,20 +50,160 @@
             <!-- more rows... -->
         </tbody>
     </table>
-   
+
     <h2>Map of GLA</h2>
-    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.6343923213876!2d77.59446037491935!3d27.604862430005067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1754884615758!5m2!1sen!2sin" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3535.6343923213876!2d77.59446037491935!3d27.604862430005067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39736ce47bffc039%3A0xfe5fc3da92c6341!2sGLA%20University!5e0!3m2!1sen!2sin!4v1754884615758!5m2!1sen!2sin"
+        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
     <h2>Songs</h2>
 
     <!-- <audio controls>
         <source src="128-Pehle Bhi Main - Animal 128 Kbps.mp3" type="audio/mpeg">
     </audio> -->
+    <audio src="/media/128-Pehle Bhi Main - Animal 128 Kbps.mp3" controls loop></audio>
+    <video src="/media/video.mp4" autoplay></video>
 
-    <audio src="/media/128-Pehle Bhi Main - Animal 128 Kbps.mp3" controls loop ></audio>
-    <video src="/media/video.mp4" autoplay ></video>
+    <form action="/submit" method="post">
+        <table border="1" cellpadding="8">
+            <tr>
+                <th>Field</th>
+                <th>Input</th>
+            </tr>
 
-    <form action="submit.php" method="post">
-        <input type="text" name="username" placeholder="Enter your name" required>
+            <tr>
+                <td><label for="name">Name:</label></td>
+                <td><input type="text" id="name" name="name" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="email" id="email" name="email" required></td>
+            </tr>
+
+            <tr>
+                <td><label for="age">Age:</label></td>
+                <td><input type="number" id="age" name="age"></td>
+            </tr>
+
+            <tr>
+                <td>Gender:</td>
+                <td>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label for="female">Female</label>
+                    <input type="radio" id="other" name="gender" value="other">
+                    <label for="other">Other</label>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="country">Country:</label></td>
+                <td>
+                    <select id="country" name="country">
+                        <option value=""> Select Country</option>
+                        <option value="IN">India</option>
+                        <option value="US">USA</option>
+                        <option value="UK">UK</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="message">Message:</label></td>
+                <td>
+                    <textarea id="message" name="message" rows="4" cols="40"></textarea>
+                </td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align:center;">
+                    <input type="submit" value="Submit">
+                    <input type="reset" value="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+
+    <form action="submit.php">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+        <br><br>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email" placeholder="Enter your email" required>
+        <br><br>
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age">
+        <br><br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female">
+        <label for="female">Female</label>
+        <input type="radio" id="other" name="gender" value="other">
+        <label for="other">Other</label>
+        <br><br>
+        <label for="hobbies">Hobbies:</label>
+        <input type="checkbox" id="reading" name="hobbies" value="reading">
+        <label for="reading">Reading</label>
+        <input type="checkbox" id="writing" name="hobbies" value="writing">
+        <label for="writing">Writing</label>
+        <input type="checkbox" id="coding" name="hobbies" value="coding">
+        <label for="coding">Coding</label>
+        <input type="checkbox" id="playing" name="hobbies" value="playing">
+        <label for="playing">Playing</label>
+        <br><br>
+
+        <label for="country">Country:</label>
+        <select id="country" name="country">
+            <option value="Select">Select Country</option>
+            <option value="India">India</option></option>
+            <option value="USA">USA</option>
+            <option value="UK">UK</option>
+        </select>
+        <br><br>
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+
+    </form>
+
+    <form action="submit.php">
+        <table  border="1" cellpadding="8">
+            <tr>
+                <th>Fields</th>
+                <th>Inputs</th>
+            </tr>
+            <tr>
+                <td>
+                    <label for="name">Name:</label>
+                </td>
+                <td>
+                    <input type="text" id="name" name="name">
+                </td>
+            </tr>
+
+            <tr>
+                <td><label for="email">Email:</label></td>
+                <td><input type="text" id="email" name="email"></td>
+            </tr>
+
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" id="dob" name="dob"></td>
+            </tr>
+
+            <tr>
+                <td><label for="about">About:</label></td>
+                <td><textarea name="about" id="about"></textarea></td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="text-align: center;"><input type="submit">
+                    <input type="reset">
+                </td>
+            </tr>
+        </table>
     </form>
     <!-- The   content of the webpage starts here.  -->
 
