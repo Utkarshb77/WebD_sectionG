@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <style>
+        body {
+            margin: 2px;
+        }
+        .heading {
+            padding: 50px;
+            background-color: rgb(247, 73, 73);
+            border: 2px solid gray;
+            text-align: center;
+        }
+        .block {
+            height: 240px;
+            width: 400px;
+            list-style: none;
+            /* display: inline-block; */
+            margin: 10px;
+            transition: transform 0.3s;
+            display: inline;
+            background-color: rgb(235, 235, 230);
+            text-align: center;
+        }
+
+        .block:hover {
+            transform: scale(1.05);
+        }
+
+        .content {
+            padding: 15px;
+            display: flex;
+        }
+
+        footer {
+            background-color: rgb(74, 47, 47);
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to My Blog</h1>
+    <p>This is a simple blog page.</p>
+    <div class="content">
+        <nav class="block">
+            <img style="width: 190px; height: 160px;" src="photo.jpg" alt="">
+            <p>PhotoGraphy</p>
+            <p>Share Like Subscribe</p>
+        </nav>
+        <br>
+        <nav class="block">
+            <img style="width: 190px; height: 160px;" src="photo.jpg" alt="">
+            <p>Wild Life</p>
+            <p>Share Like Subscribe</p>
+        </nav>
+        <br>
+        <nav class="block">
+            <img style="width: 190px; height: 160px;" src="https://www.istockphoto.com/photo/blogging-woman-reading-blog-gm887987150-246375044" alt="">
+            <p>Cars</p>
+            <p>Share Like Subscribe</p>
+        </nav>
+    </div>
+    </nav>
+    <footer>
+            Made with &hearts; by Utkarsh Baghel
+    </footer>
+</body>
+</html>
